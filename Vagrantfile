@@ -1,5 +1,8 @@
 Vagrant.configure(2) do |config|
 
+  if Vagrant.has_plugin?("vagrant-hostmanager")
+    config.hostmanager.enabled = true
+
   config.vm.define "k8s_master" do |master|
     master.vm.box = "ubuntu/jammy64"
     # master.vm.box = "bento/ubuntu-22.04"
@@ -35,7 +38,7 @@ Vagrant.configure(2) do |config|
     end
     worker2.vm.provision "shell", path: "scripts/install.sh"
   end
-#  end
+ end
 end
 
 
