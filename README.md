@@ -1,5 +1,22 @@
 # Kubernetes Installation on Ubuntu 22.04
 
+### Install Virtual box and Vagrant
+
+Install Virtualbox and Vagrant on the laptop or PC
+>[Virtualbox](https://www.virtualbox.org/)
+
+>[Vagrant](https://www.vagrantup.com/)
+
+### Clone the repo
+
+Clone the repo to the desired location
+
+```bash
+git clone https://github.com/mialeevs/Kubernetes_installation_vagrant.git
+cd kubernetes_installation_vagrant
+vagrant up
+```
+
 ### On the Kube master server
 
 Initialize the cluster by passing the cidr value and the value will depend on the type of network CLI you choose.
