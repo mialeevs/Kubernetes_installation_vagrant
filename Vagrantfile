@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
     # cp.vm.box = "bento/ubuntu-22.04"
     cp.vm.network "private_network", ip: "192.168.56.10"
     cp.vm.hostname = "cp"
+    cp.vm.boot_timeout = 300
     cp.vm.provider "virtualbox" do |vb|
       vb.memory = 4096
       vb.cpus = 2
@@ -20,6 +21,7 @@ Vagrant.configure(2) do |config|
     # w1.vm.box = "bento/ubuntu-22.04"
     w1.vm.network "private_network", ip: "192.168.56.21"
     w1.vm.hostname = "w1"
+    w1.vm.boot_timeout = 300
     w1.vm.provider "virtualbox" do |vb|
       vb.memory = 2048
       vb.cpus = 2
@@ -32,6 +34,7 @@ Vagrant.configure(2) do |config|
     # w2.vm.box = "bento/ubuntu-22.04"
     w2.vm.network "private_network", ip: "192.168.56.22"
     w2.vm.hostname = "w2"
+    w2.vm.boot_timeout = 300
     w2.vm.provider "virtualbox" do |vb|
       vb.memory = 2048
       vb.cpus = 2

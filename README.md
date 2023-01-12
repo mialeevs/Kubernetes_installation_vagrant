@@ -1,11 +1,14 @@
 # Kubernetes Installation on Ubuntu 22.04
 
-### Install Virtual box and Vagrant
+### Install Virtual box, Vagrant and Git
 
-Install Virtualbox and Vagrant on the laptop or PC
->[Virtualbox](https://www.virtualbox.org/)
+Install Virtualbox, Vagrant and Git on the laptop or PC
 
->[Vagrant](https://www.vagrantup.com/)
+> [Virtualbox](https://www.virtualbox.org/)
+
+> [Vagrant](https://www.vagrantup.com/)
+
+> [GIT](https://git-scm.com/)
 
 ### Clone the repo
 
