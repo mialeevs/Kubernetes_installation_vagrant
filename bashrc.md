@@ -1,5 +1,5 @@
 ```bash
-sudo apt install bast-completion
+sudo apt install bash-completion
 ```
 
 > insert in .bashrc file
