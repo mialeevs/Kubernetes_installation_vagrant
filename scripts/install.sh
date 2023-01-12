@@ -2,7 +2,7 @@ sudo apt-get update -y
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
 
 export OS_VERSION=xUbuntu_22.04
-export CRIO_VERSION=1.25.2
+export CRIO_VERSION=1.26
 
 
 sudo curl -fsSL https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS_VERSION/Release.key | sudo gpg --dearmor -o /usr/share/keyrings/libcontainers-archive-keyring.gpg
