@@ -1,3 +1,4 @@
+sudo swap off -a
 sudo apt-get update -y
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
 
@@ -23,8 +24,6 @@ sudo echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] ht
 sudo apt-get update -y
 
 sudo apt-get install -y cri-o cri-o-runc kubelet=1.24.2-00 kubeadm=1.24.2-00 kubectl=1.24.2-00
-
-sleep 10
 
 sudo systemctl daemon-reload
 sudo systemctl enable crio
