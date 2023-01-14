@@ -46,6 +46,15 @@ vagrant up
 
 Initialize the cluster by passing the cidr value and the value will depend on the type of network CLI you choose.
 
+Note: Disable swap on all the nodes before running the init command
+
+```bash
+sudo swapoff -a
+
+# comment the swap entry
+sudo vim /etc/fstab
+```
+
 ```bash
 # For Virtual Box
 sudo kubeadm init --apiserver-advertise-address=192.168.56.10 --pod-network-cidr=10.244.0.0/16
