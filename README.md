@@ -16,7 +16,7 @@ Install Virtualbox, Vagrant and Git on the laptop or PC
 
 ### Installl VMware player/workstation, Vagrant, VMware destop plugin and Git
 
-< [VMWare Workstation/Player](https://www.vmware.com/products/workstation-pro.html)
+> [VMWare Workstation/Player](https://www.vmware.com/products/workstation-pro.html)
 
 > [VMWare Desktop Plugin](https://developer.hashicorp.com/vagrant/docs/providers/vmware/vagrant-vmware-utility)
 
@@ -46,6 +46,10 @@ sudo kubeadm init --apiserver-advertise-address=192.168.56.10 --pod-network-cidr
 
 # For VMWare Desktop
 sudo kubeadm init --apiserver-advertise-address=192.168.52.10 --pod-network-cidr=10.244.0.0/16
+
+# Sample join command(You will get a kubeadm join command as shown below, save is safe)
+# Run the kudeadm join command on both the worker nodes
+sudo kubeadm join 192.168.52.10:6443 --token g8v4ma.r7z7xxxxxx1dnwb1 --discovery-token-ca-cert-hash sha256:930f85997fdfxxxxxxxxxxxxxxx8fd084f30a8b12080f3e4b530
 ```
 
 ### Start using the cluster using current user
