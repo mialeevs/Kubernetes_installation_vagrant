@@ -24,6 +24,12 @@ Install Virtualbox, Vagrant and Git on the laptop or PC
 
 > [GIT](https://git-scm.com/)
 
+Install teh vmware-desktop plugin
+
+```bash
+vagrant plugin install vagrant-vmware-desktop
+```
+
 ### Clone the repo
 
 Clone the repo to the desired location
