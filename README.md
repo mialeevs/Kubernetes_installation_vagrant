@@ -24,13 +24,13 @@ Install Virtualbox, Vagrant and Git on the laptop or PC
 
 > [GIT](https://git-scm.com/)
 
-Install teh vmware-desktop plugin
+Install the vmware-desktop plugin
 
 ```bash
 vagrant plugin install vagrant-vmware-desktop
 ```
 
-### Clone the repo
+### Clone the repository
 
 Clone the repo to the desired location
 
@@ -42,7 +42,7 @@ cd kubernetes_installation_vagrant
 vagrant up
 ```
 
-### On the Kube master server
+## On the Kube master server
 
 Initialize the cluster by passing the cidr value and the value will depend on the type of network CLI you choose.
 
@@ -58,7 +58,7 @@ sudo kubeadm init --apiserver-advertise-address=192.168.52.10 --pod-network-cidr
 sudo kubeadm join 192.168.52.10:6443 --token g8v4ma.r7z7xxxxxx1dnwb1 --discovery-token-ca-cert-hash sha256:930f85997fdfxxxxxxxxxxxxxxx8fd084f30a8b12080f3e4b530
 ```
 
-### Start using the cluster using current user
+### Start using the cluster with current user
 
 ```bash
 mkdir -p $HOME/.kube
@@ -72,7 +72,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```
 
-### Install metrics server
+### To install metrics server
 
 ```bash
 git clone https://github.com/mialeevs/kubernetes_installation_crio.git
