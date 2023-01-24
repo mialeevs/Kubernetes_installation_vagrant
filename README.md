@@ -2,7 +2,7 @@
 
 ## For Linux OS
 
-### Install Virtual box, Vagrant and Git
+### Install VirtualBox, Vagrant and Git
 
 Install Virtualbox, Vagrant and Git on the laptop or PC
 
@@ -14,11 +14,15 @@ Install Virtualbox, Vagrant and Git on the laptop or PC
 
 ## For Windows 10/11 OS
 
-### Installl VMware player/workstation, Vagrant, VMware destop plugin and Git
+### Installl VMware Workstation(VMware destop plugin) or VirtualBox, Vagrant and Git
 
-> [VMWare Workstation/Player](https://www.vmware.com/products/workstation-pro.html)
+> [VMWare Workstation](https://www.vmware.com/products/workstation-pro.html)
 
 > [VMWare Desktop Plugin](https://developer.hashicorp.com/vagrant/docs/providers/vmware/vagrant-vmware-utility)
+
+OR
+
+> [Virtualbox](https://www.virtualbox.org/)
 
 > [Vagrant](https://www.vagrantup.com/)
 
@@ -38,7 +42,7 @@ Clone the repo to the desired location
 git clone https://github.com/mialeevs/Kubernetes_installation_vagrant.git
 cd kubernetes_installation_vagrant
 
-# Rename the Vagrant file based on the provider to Vagrantfile and run below command
+# Rename the Vagrant file based on the provider to "Vagrantfile" and run below command
 vagrant up
 ```
 
