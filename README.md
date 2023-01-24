@@ -12,9 +12,15 @@ Install Virtualbox, Vagrant and Git on the laptop or PC
 
 > [GIT](https://git-scm.com/)
 
+Install the virtualbox plugin
+
+```bash
+vagrant plugin install vagrant-vbguest
+```
+
 ## For Windows 10/11 OS
 
-### Installl VMware Workstation(VMware destop plugin) or VirtualBox, Vagrant and Git
+### Install VMware Workstation(VMware destop plugin) or VirtualBox, Vagrant and Git
 
 > [VMWare Workstation](https://www.vmware.com/products/workstation-pro.html)
 
@@ -32,6 +38,12 @@ Install the vmware-desktop plugin
 
 ```bash
 vagrant plugin install vagrant-vmware-desktop
+```
+
+Install the virtualbox plugin
+
+```bash
+vagrant plugin install vagrant-vbguest
 ```
 
 ### Clone the repository
