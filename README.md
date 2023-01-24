@@ -12,10 +12,10 @@ Install Virtualbox, Vagrant and Git on the laptop or PC
 
 > [GIT](https://git-scm.com/)
 
-Install the virtualbox plugin
+Install the necessary plugins
 
 ```bash
-vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostmanager
 ```
 
 ## For Windows 10/11 OS
@@ -34,16 +34,18 @@ OR
 
 > [GIT](https://git-scm.com/)
 
-Install the vmware-desktop plugin
+Install the required plugins for vmwaredesktop
 
 ```bash
 vagrant plugin install vagrant-vmware-desktop
+vagrant plugin install vagrant-hostmanager
 ```
 
-Install the virtualbox plugin
+Install the required plugins for virtualbox
 
 ```bash
-vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostmanager
+
 ```
 
 ### Clone the repository
