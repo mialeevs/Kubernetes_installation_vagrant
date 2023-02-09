@@ -110,5 +110,6 @@ kubectl create -f custom-resources.yaml
 git clone https://github.com/mialeevs/kubernetes_installation_crio.git
 cd kubernetes_installation_crio/
 kubectl apply -f metrics-server.yaml
-
+cd
+rm -rf kubernetes_installation_crio/
 ```
