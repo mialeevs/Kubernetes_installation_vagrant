@@ -2,6 +2,8 @@ Vagrant.configure(2) do |config|
 
   if Vagrant.has_plugin?("vagrant-hostmanager")
     config.hostmanager.enabled = true
+    config.hostmanager.manage_host = true
+    config.hostmanager.manage_guest = true
 
   config.vm.define "k8s_cp" do |cp|
     cp.vm.box = "bento/ubuntu-22.04"
