@@ -100,6 +100,9 @@ kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0
 
 curl https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/custom-resources.yaml -O
 
+# Update the ip value to 10.244.0.0/16
+# vim custom-resources.yaml
+
 kubectl create -f custom-resources.yaml
 
 ```
