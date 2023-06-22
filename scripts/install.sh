@@ -22,7 +22,7 @@ sudo echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] http
 
 sudo apt-get update -y
 
-sudo apt-get install -y cri-o cri-o-runc kubelet=1.26.0-00 kubeadm=1.26.0-00 kubectl=1.26.0-00
+sudo apt-get install -y cri-o cri-o-runc kubelet=1.27.3-00 kubeadm=1.27.3-00 kubectl=1.27.3-00
 
 sudo systemctl daemon-reload
 sudo systemctl enable crio
