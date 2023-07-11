@@ -20,7 +20,8 @@ Vagrant.configure(2) do |config|
   config.vm.define "k8s_w1" do |w1|
     w1.vm.box = "bento/ubuntu-22.04"
     w1.vm.network "private_network", ip: "192.168.56.21"
-    w1.vm.network "forwarded_port", guest: 33000, host: 33000
+    w1.vm.network "forwarded_port", guest: 32300, host: 32300
+    w1.vm.network "forwarded_port", guest: 32400, host: 32400
     w1.vm.network "forwarded_port", guest: 32500, host: 32500
     w1.vm.network "forwarded_port", guest: 32600, host: 32600
     w1.vm.hostname = "w1"
@@ -35,7 +36,8 @@ Vagrant.configure(2) do |config|
   config.vm.define "k8s_w2" do |w2|
     w2.vm.box = "bento/ubuntu-22.04"
     w2.vm.network "private_network", ip: "192.168.56.22"
-    w2.vm.network "forwarded_port", guest: 33000, host: 33001
+    w2.vm.network "forwarded_port", guest: 32300, host: 32301
+    w2.vm.network "forwarded_port", guest: 32400, host: 32401
     w2.vm.network "forwarded_port", guest: 32500, host: 32501
     w2.vm.network "forwarded_port", guest: 32600, host: 32601
     w2.vm.hostname = "w2"
