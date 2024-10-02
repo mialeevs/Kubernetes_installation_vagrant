@@ -96,9 +96,9 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ### To set up the Calico network
 
 ```bash
-kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/tigera-operator.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.28.2/manifests/tigera-operator.yaml
 
-curl https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/custom-resources.yaml -O
+curl https://raw.githubusercontent.com/projectcalico/calico/v3.28.2/manifests/custom-resources.yaml -O
 
 # Update the ip value to 10.244.0.0/16
 # vim custom-resources.yaml
