@@ -4,8 +4,8 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
 
-export CRIO_VERSION=1.30
-export KUBERNETES_VERSION=1.30
+export CRIO_VERSION=v1.30
+export KUBERNETES_VERSION=v1.31
 
 
 # sudo curl -fsSL https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS_VERSION/Release.key | sudo gpg --dearmor -o /usr/share/keyrings/libcontainers-archive-keyring.gpg
