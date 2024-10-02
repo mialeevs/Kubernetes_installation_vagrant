@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
       vb.memory = 4096
       vb.cpus = 2
     end
-    cp.vm.provision "shell", path: "scripts/install.sh"
+    cp.vm.provision "shell", path: "scripts/control.sh"
   end
 
   config.vm.define "k8s_w1" do |w1|
@@ -30,7 +30,7 @@ Vagrant.configure(2) do |config|
       vb.memory = 2048
       vb.cpus = 2
     end
-    w1.vm.provision "shell", path: "scripts/install.sh"
+    w1.vm.provision "shell", path: "scripts/agent.sh"
   end
 
   config.vm.define "k8s_w2" do |w2|
@@ -46,7 +46,7 @@ Vagrant.configure(2) do |config|
       vb.memory = 2048
       vb.cpus = 2
     end
-    w2.vm.provision "shell", path: "scripts/install.sh"
+    w2.vm.provision "shell", path: "scripts/agent.sh"
   end
  end
 end
