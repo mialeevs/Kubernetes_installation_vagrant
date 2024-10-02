@@ -5,7 +5,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
 
 export OS_VERSION=xUbuntu_22.04
-export CRIO_VERSION=v1.30
+export CRIO_VERSION=v1.28
 export KUBERNETES_VERSION=v1.31
 
 
