@@ -46,3 +46,26 @@ net.ipv4.ip_forward                 = 1
 EOF
 
 sudo sysctl --system
+
+
+# Installing HELM
+sleep 30
+echo "Installing Helm"
+sudo apt-get update -y
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+rm get_helm.sh
+
+sleep 5
+sudo apt-get install bash-completion -y
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+echo "complete -F __start_kubectl k" >> ~/.bashrc
+echo "alias k=kubectl" >> ~/.bashrc
+echo "alias c=clear" >> ~/.bashrc
+source ~/.profile
+
+# Install ArgoCD cli
+wget https://github.com/argoproj/argo-cd/releases/download/v2.12.2/argocd-linux-amd64
+sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+rm argocd-linux-amd64
